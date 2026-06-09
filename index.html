@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    First
+    <div id="current-date"></div>
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+    <script>
+        const now = new Date();
+        $(function(){
+            $('#current-date').text(now.toUTCString());
+        });
+        
+        
+    </script>
 </body>
 </html>
