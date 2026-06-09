@@ -11,6 +11,7 @@
     <script>
         const now = new Date();
         $(function(){
+            console.log(now.toUTCString());
             $('#current-date').text(now.toUTCString());
         });
         
